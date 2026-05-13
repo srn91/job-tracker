@@ -13,7 +13,7 @@ Dockerized stack:
 | Stack | Dockerized PostgreSQL 16 database, Node/Express API, and React/Vite client served by Nginx. |
 | Local run path | `docker compose up -d` starts database, server, and client services. |
 | API surface | Express exposes `/healthz`, `GET /names`, and `POST /names` for a minimal persistence workflow. |
-| Database proof | PostgreSQL stores submitted names in `app.names` and can be inspected inside the container. |
+| Database check | PostgreSQL stores submitted names in `app.names` and can be inspected inside the container. |
 | Project scope | Early full-stack persistence PoC that supports later job-operations workflow work. |
 
 ## Overview
