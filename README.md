@@ -6,21 +6,21 @@ Dockerized stack:
 - **client**: React (Vite) served by Nginx
 
 
-## Proof Snapshot
+## Results
 
-| Signal | Current evidence |
+| Area | Details |
 |---|---|
 | Stack | Dockerized PostgreSQL 16 database, Node/Express API, and React/Vite client served by Nginx. |
 | Local run path | `docker compose up -d` starts database, server, and client services. |
 | API surface | Express exposes `/healthz`, `GET /names`, and `POST /names` for a minimal persistence workflow. |
 | Database proof | PostgreSQL stores submitted names in `app.names` and can be inspected inside the container. |
-| Project role | Early full-stack persistence PoC that supports later job-operations workflow work. |
+| Project scope | Early full-stack persistence PoC that supports later job-operations workflow work. |
 
-## What This Proves
+## Overview
 
 - The repo shows the smallest working Dockerized full-stack path: client, API, database, and persistence check.
-- It is a support project, not a flagship AI/ML repo; keep it public only as backend/full-stack evidence.
-- The evidence maps to backend fundamentals, Docker, PostgreSQL, Express, React, and API workflow roles.
+- It is a small support project, not a flagship AI/ML system.
+- The code covers backend fundamentals: Docker, PostgreSQL, Express, React, API routing, and a simple persistence check.
 
 ## Architecture
 
